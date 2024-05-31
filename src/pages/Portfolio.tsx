@@ -15,7 +15,7 @@ type IProject = {
 }
 
 function Portfolio() {
-  const { loading, data } = useFetchApi<{ projects: IProject[] }>('https://thangly.hasura.app/api/rest/portfolio-page')
+  const { loading, data } = useFetchApi<{ projects: IProject[] }>('https://leviettuonghuy.hasura.app/api/rest/portfolio-page')
 
   return <LoadingPage component={data ? <PortfolioPage data={data.projects} /> : null} loading={loading} />
 }
