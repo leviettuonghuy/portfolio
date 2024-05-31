@@ -8,7 +8,7 @@ type IDataContactPage = { information: IInformation; links: ILink[] }
 
 function Contact() {
   const { loading, data } = useFetchApi<Pick<IDataContactPage, 'links'> & { information: [IInformation] }>(
-    'https://thangly.hasura.app/api/rest/contact-page'
+    'https://leviettuonghuy.hasura.app/api/rest/contact-page'
   )
   return <LoadingPage component={data ? <ContactPage data={{ ...data, information: data.information[0] }} /> : null} loading={loading} />
 }
