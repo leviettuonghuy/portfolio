@@ -9,7 +9,7 @@ function About() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await GET('https://thangly.hasura.app/api/rest/about-page').then((data) => {
+      await GET('https://leviettuonghuy.hasura.app/api/rest/about-page').then((data) => {
         const { information, education, experience, projects_aggregate, skills } = data
         setData({
           information: information[0],
