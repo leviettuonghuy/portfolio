@@ -10,7 +10,7 @@ type IDataHomePage = {
 }
 
 function Home() {
-  const { loading, data } = useFetchApi<{ information: [IDataHomePage] }>('https://thangly.hasura.app/api/rest/homepage')
+  const { loading, data } = useFetchApi<{ information: [IDataHomePage] }>('https://leviettuonghuy.hasura.app/api/rest/homepage')
 
   return <LoadingPage component={data ? <HomePage data={data.information[0]} /> : null} loading={loading} />
 }
