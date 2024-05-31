@@ -40,7 +40,7 @@ function HomePage({ data }: Readonly<{ data: IDataHomePage }>) {
                 'max-lg:before:content-none max-lg:pl-0 max-lg:text-4xl',
                 'max-md:text-2xl'
               )}>
-              I'm {data.last_name} {data.first_name}.<span className={classNames('block', 'text-white')}>Front-end Developer</span>
+              I'm {data.last_name} {data.first_name}.<span className={classNames('block', 'text-white')}>2D Artist Designer</span>
             </h1>
           </Animate>
           <Animate animation='fade' animationDelay={200}>
